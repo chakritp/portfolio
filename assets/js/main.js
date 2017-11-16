@@ -101,7 +101,8 @@
 					usePopupCaption: true,
 					popupLoaderText: '',
 					windowMargin: 50,
-					usePopupNav: true
+					usePopupNav: true,
+					caption: { selector: 'div.description'}
 				});
 
 				// Hack: Adjust margins when 'small' activates.
