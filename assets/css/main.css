@@ -2168,7 +2168,7 @@
 }
 
 #intro p.links a:hover, #intro #fullStackDef:hover {
-	color: #000;
+	color: rgba(0, 0, 0, 0.6);
 }
 
 #intro p.links a .fa-stack-1x {
