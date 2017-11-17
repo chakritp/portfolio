@@ -2170,15 +2170,38 @@
 }
 
 .poptrox-popup .caption span.link {
-	color: #345995;
+	color: #98c593;
 	transition: color 0.5s ease-out;
 }
 
 span.underline {
 	text-decoration: underline;
+	color: #556e52;
 }
 
 .poptrox-popup .caption span.link:hover {
-	color: #03CEA4;
+	color: #678564;
 	cursor: pointer;
 }
+
+.box > div {
+	display: inline-block;
+	margin: 0 30px;
+}
+
+.box > div a {
+	text-decoration: none;
+	color: #98c593;
+}
+
+.box > div a:hover {
+	color: #678564;
+}
+
+	@media screen and (max-width: 480px) {
+
+		.box > div {
+			margin-top: 20px;
+		}
+
+	}
