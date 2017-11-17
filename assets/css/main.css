@@ -2095,7 +2095,7 @@
 /* Intro */
 
 	#intro {
-		background: url("images/overlay.png"), url("../../images/self-portrait.jpg");
+		background: url("images/overlay.png"), url("../../images/self-portrait-r100.jpg");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: middle left, bottom center;
@@ -2112,7 +2112,7 @@
 /* One */
 
 	#one {
-		background: url("images/overlay.png"), url("../../images/computer.jpg");
+		background: url("images/overlay.png"), url("../../images/computer-r100.jpg");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
@@ -2121,7 +2121,7 @@
 /* Two */
 
 	#two {
-		background: url("images/overlay.png"), url("../../images/soccer.jpg");
+		background: url("images/overlay.png"), url("../../images/soccer-r100.jpg");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
@@ -2161,6 +2161,21 @@
 
 		}
 
+
+#intro p.links a {
+	margin: 0 10px;
+	text-decoration: none;
+}
+
+#intro p.links a:hover, #intro #fullStackDef:hover {
+	color: #000;
+}
+
+#intro p.links a .fa-stack-1x {
+	/* color: rgba(255, 255, 255, 0.0); */
+
+}
+
 /* Overwrite poptrox */
 .poptrox-popup .caption {
 	line-height: 1.5em;
@@ -2176,7 +2191,7 @@
 
 span.underline {
 	text-decoration: underline;
-	color: #556e52;
+	color: #000;
 }
 
 .poptrox-popup .caption span.link:hover {
