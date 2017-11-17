@@ -1282,6 +1282,7 @@
 			width: 50%;
 			position: relative;
 			opacity: 1.0;
+			padding: 10px;
 		}
 
 			.gallery article .image {
