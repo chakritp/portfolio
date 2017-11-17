@@ -2160,3 +2160,11 @@
 			}
 
 		}
+
+/* Overwrite poptrox */
+.poptrox-popup .caption {
+	line-height: 1.5em;
+	bottom: auto;
+	height: auto;
+	padding: 5px;
+}

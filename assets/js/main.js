@@ -102,7 +102,8 @@
 					popupLoaderText: '',
 					windowMargin: 50,
 					usePopupNav: true,
-					caption: { selector: 'div.description', remove: true }
+					selector: '.work-item a.image',
+					caption: { selector: 'div.description', remove: true },
 				});
 
 				// Hack: Adjust margins when 'small' activates.
