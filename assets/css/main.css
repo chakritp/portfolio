@@ -2171,11 +2171,6 @@
 	color: rgba(0, 0, 0, 0.6);
 }
 
-#intro p.links a .fa-stack-1x {
-	/* color: rgba(255, 255, 255, 0.0); */
-
-}
-
 /* Overwrite poptrox */
 .poptrox-popup .caption {
 	line-height: 1.5em;
@@ -2216,7 +2211,7 @@ span.underline {
 	@media screen and (max-width: 480px) {
 
 		.box > div {
-			margin-top: 20px;
+			margin-top: 50px;
 		}
 
 	}
