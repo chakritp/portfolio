@@ -95,15 +95,16 @@
 						<div class="gallery">
 							<article class="from-left work-item">
 								<a href="images/fulls/pokemon.jpg" class="image fit">
+									<img src="images/thumbs/pokemon.jpg" title="Pokemon Battle Arena" alt="" />
 									<div class="description">
 										<h4>Pokemon Battle Arena</h4>
 										<p>A game based on the classic pokemon game, this game is a turn based game between two players who choose from a selection
-										of pokemon to see who is the last player standing. <br /><br />
-										Technologies: HTML5, CSS3, Javascript / jQuery</p>
-										<!-- <a href="https://chakritp.github.io/pokemon-game/"><i class="fa fa-globe"></i>Website</a>
-										<a href="https://github.com/chakritp/pokemon-game"><i class="fa fa-github"></i>pokemon-game</a> -->
+											of pokemon to see who is the last player standing. <br /><br />
+											Technologies: HTML5, CSS3, Javascript / jQuery <br>
+											<span class="link" data-href="https://chakritp.github.io/pokemon-game/"><i class="fa fa-globe"></i>Website</span> |
+											<span class="link" data-href="https://github.com/chakritp/pokemon-game"><i class="fa fa-github"></i>Github</span>
+										</p>
 									</div>
-									<img src="images/thumbs/pokemon.jpg" title="Pokemon Battle Arena" alt="" />
 								</a>
 							</article>
 							<article class="from-right work-item">
@@ -113,6 +114,8 @@
 										<p>A web application where users can input expenses and income and get visual representations of how they are spending their
 										money.<br /><br />
 										Technologies: Ruby on Rails, HTML, CSS, Javascript / jQuery, Git/Github and Heroku.</p>
+										<span class="link" data-href="https://pocket-trackr.herokuapp.com/"><i class="fa fa-globe"></i>Website</span> |
+										<span class="link" data-href="https://github.com/chakritp/budget-tracker"><i class="fa fa-github"></i>Github</span>
 									</div>
 									<img src="images/thumbs/pocket-trackr.jpg" title="Pocket Trackr" alt="" />
 								</a>
@@ -126,6 +129,8 @@
 										General users can also browse through a gallery of vacant properties and contact property owners through
 										a form for general inquiries. My role in the team was developer and Trello board task coordinator. <br /><br />
 										Technologies: HTML5, CSS3, Javascript, jQuery, Node.js, Express, Passport.js, MongoDB, Git/Github, Heroku</p>
+										<span class="link" data-href="https://partmint.herokuapp.com/"><i class="fa fa-globe"></i>Website</span> |
+										<span class="link" data-href="https://github.com/chakritp/project3"><i class="fa fa-github"></i>Github</span>
 									</div>
 									<img src="images/thumbs/partmint.jpg" title="Partmint" alt="" />
 								</a>
@@ -140,6 +145,8 @@
 										the products on the menu and update the status of the orders in real time.<br /><br />
 										Technologies: HTML5, CSS3, Javascript, React.js,
 										Node.js, Express, Stripe API, Socket.io, MongoDB, JSON Web Tokens</p>
+										<span class="link" data-href="https://ga-pressto.herokuapp.com/"><i class="fa fa-globe"></i>Website</span> |
+										<span class="link" data-href="https://github.com/chakritp/pressto"><i class="fa fa-github"></i>Github</span>
 									</div>
 									<img src="images/thumbs/pressto.jpg" title="Pressto" alt="" />
 								</a>
@@ -188,6 +195,20 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
-
+			<script>
+				$(function(){
+					$('a.image').on('click', function(e){
+						setTimeout(function(){
+							$('.poptrox-popup').on('click', '.caption span.link', function(evt) {
+								var link = $('<a>')
+								link.attr("target", "_blank");
+								link.attr("href", $(this).attr('data-href'));
+								window.open(link.attr('href'))
+								return false;
+							})
+						}, 700)
+					})
+				})
+			</script>
 	</body>
 </html>

@@ -16,7 +16,6 @@
 	});
 
 	$(function() {
-
 		var	$window = $(window),
 			$body = $('body'),
 			$header = $('#header'),
@@ -103,7 +102,7 @@
 					windowMargin: 50,
 					usePopupNav: true,
 					selector: '.work-item a.image',
-					caption: { selector: 'div.description', remove: true },
+					caption: { selector: 'div.description', remove: true }
 				});
 
 				// Hack: Adjust margins when 'small' activates.

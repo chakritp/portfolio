@@ -2168,3 +2168,12 @@
 	height: auto;
 	padding: 5px;
 }
+
+.poptrox-popup .caption span.link {
+	color: blue;
+}
+
+.poptrox-popup .caption span.link:hover {
+	color: grey;
+	cursor: pointer;
+}
